@@ -1,13 +1,17 @@
 # This module contains functions to lazily generate student data.
 
-def student_generator(student_list, major):
+def student_generator(students, major):
     """
-    Generate student records filtered by major lazily for memory efficiency
-    using a Python generator.
+    Return a generator expression for all students by major.
     
-
+    Args:
+        students: List of student tuples (ID, Name, Major)
+        major: String representing the major to filter by
+    
+    Returns:
+        Generator expression yielding students matching the specified major
+    
+    Example:
+        generator_expression = (student for student in students if student[2] == major)
     """
-    for student in student_list:
-        if student['major'] == major:
-            yield student
-
+    return (student for student in students if student[2] == major)

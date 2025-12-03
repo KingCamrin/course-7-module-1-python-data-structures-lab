@@ -1,11 +1,11 @@
 # This module initializes student records.
 
 # Define a list of students stored as tuples (ID, Name, Major)
+# List of students stored as tuples (ID, Name, Major)
 students = [
-    {'id': 1, 'name': 'Alice Johnson', 'major': 'Computer Science'},
-    {'id': 2, 'name': 'Bob Smith', 'major': 'Mathematics'},
-    {'id': 3, 'name': 'Charlie Brown', 'major': 'Physics'},
-    {'id': 4, 'name': 'Diana Prince', 'major': 'Computer Science'},
-    {'id': 5, 'name': 'Ethan Hunt', 'major': 'Chemistry'},
-    {'id': 6, 'name': 'Fiona Gallagher', 'major': 'Mathematics'},
+    (101, "Alice Johnson", "Computer Science"),
+    (102, "Bob Smith", "Mathematics"),
+    (103, "Charlie Davis", "Physics"),
+    (104, "David Wilson", "Computer Science"),
+    (105, "Eve Lewis", "Mathematics"),
 ]
